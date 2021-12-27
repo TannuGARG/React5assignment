@@ -8,7 +8,7 @@
   
   .logo{
     float: right;
-    height:60px;
+    height:40px;
   }
   .site-container h1{
     padding-left: 10px;
@@ -16,7 +16,7 @@
   }
   .post{
     margin-left: 350px;
-    height: 400px;
+    height: 410px;
     width:600px;
     border: 1px solid gray;
     
@@ -35,9 +35,27 @@
     
   }
   
+  .post .imog .imog1{
+    height: 5px;
+    width: 5px;
+  }
+  .post .imog{
+    width:600px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .post .tam{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  
   .post .box3{
     width:600px;
-    height:90px;
+    height:50px;
     
     
   
