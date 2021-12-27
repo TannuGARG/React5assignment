@@ -7,11 +7,13 @@ import cam from "./logo.jpg"
 
 const Postview=()=> {
   const [posts,setPost]=useState([]); 
+  
   React.useEffect(()=>{
     fetch("http://localhost:3004/user")
     .then((res)=>res.json())
     .then((responseData)=>setPost(responseData))
   },[])
+  
   return(
     <div className="site-container">
       <hr></hr>
@@ -21,6 +23,7 @@ const Postview=()=> {
         
       </div>
       <hr></hr>
+     
       {posts.map((post,index)=>{
           return (
             <div className='post' key={index}>
@@ -43,14 +46,20 @@ const Postview=()=> {
 
                   
                 </div>
+               
               </div>
             </div> 
+          
           )}
-        )} 
+          
+        )
+        }
+        </div>
+        
      
 
    
-    </div> 
+    
   )}
    
 export default Postview;
